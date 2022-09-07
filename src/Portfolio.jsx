@@ -7,8 +7,8 @@ import { Assignment } from '@mui/icons-material';
 function Portfolio() {
 
     return (
-        <Box sx={{background: 'lightgray', pb: '40px'}}>
-            <Box id='portfolio' sx={{display: 'flex', flexDirection: 'row', p: '40px 60px'}}>
+        <Box sx={{background: 'lightgray', pb: '80px'}}>
+            <Box id='portfolio' sx={{display: 'flex', flexDirection: 'row', p: '80px 60px'}}>
 
             <Paper elevation={5} sx={{p: '10px', height: '256px', width: '512px', position: 'relative'}}>
                 <Box sx={{height: '100%'}}>

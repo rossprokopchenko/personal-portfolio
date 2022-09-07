@@ -16,7 +16,7 @@ function About() {
                 <Typography variant='h4' style={{color: 'lightgray'}}>FULL STACK DEVELOPER</Typography>
             </div>
             <div className="about-right">
-                <Typography variant='h5' style={{color: 'white', padding: '30px', lineHeight: '1.6'}}>
+                <Typography variant='h5' style={{color: 'lightgray', padding: '30px', lineHeight: '1.6'}}>
                     My name is Ross Prokopchenko and I will graduate York University in December 2022 with a Bachelors of Arts degree in Computer Science. 
                     Programming has been extremely inspiring to me in high school since I believe once you take apart any problem step by step and start from the beginning, you can understand anything.
                     My love for knowledge and problem-solving has led me to where I am today and I am looking forward to expanding my experience and career growth in software development. 

@@ -6,7 +6,7 @@ import { Send } from '@mui/icons-material';
 
 function Contact() {
     return (
-        <Box sx={{p: '30px'}} display='flex' justifyContent='center' alignItems='center'>
+        <Box sx={{background: 'lightgray', p: '80px'}} display='flex' justifyContent='center' alignItems='center'>
             <Paper elevation={5} sx={{p: '15px', background: 'white', height: '370px', width: '512px'}} justifyContent='center' alignItems='center'>
                 <Box sx={{height: '100%', position: 'relative'}}>
                     <Box sx={{display: 'flex', flexDirection: 'row'}}>

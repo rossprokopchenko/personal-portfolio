@@ -8,7 +8,7 @@ function Footer() {
 
     return (
         <Box sx={{padding: '30px 60px',
-            background: 'black',
+            background: '#212529',
             width: '100%',
             textAlign: 'center'}}>
             <Typography variant='h4' sx={{color: 'white'}}>Ross Prokopchenko</Typography>
