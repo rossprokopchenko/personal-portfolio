@@ -1,12 +1,27 @@
 import React from 'react';
-import { Box, Button, Paper, TextField } from '@mui/material';
+import { Box, Button, Paper, TextField, ThemeProvider, createTheme, Typography } from '@mui/material';
 import { Send } from '@mui/icons-material';
 
 //#1e1e1e
 
 function Contact() {
+    const theme = createTheme({
+        typography: {
+            fontFamily: [
+            'Montserrat',
+            'Black',
+            ].join(','),
+        },});
+
     return (
-        <Box sx={{background: 'lightgray', p: '80px'}} display='flex' justifyContent='center' alignItems='center'>
+        <Box id="contact" sx={{background: 'lightgray', p: '80px', flexDirection: 'column'}} display='flex' justifyContent='center' alignItems='center'>
+
+            <ThemeProvider theme={theme}>
+                <Typography variant='h2' sx={{fontWeight: 'bolder', mb: '50px'}}>
+                    CONTACT
+                </Typography>
+            </ThemeProvider>
+            
             <Paper elevation={5} sx={{p: '15px', background: 'white', height: '370px', width: '512px'}} justifyContent='center' alignItems='center'>
                 <Box sx={{height: '100%', position: 'relative'}}>
                     <Box sx={{display: 'flex', flexDirection: 'row'}}>

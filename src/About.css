@@ -1,24 +1,5 @@
 .about {
-    margin: 30px;
-    
-}
-
-.about-left {
-    display: flex;
-    flex-direction:column;
-    height: 100%;
-    width: 50%;
-    float: left;
-    align-items: center;
-    justify-content: center;
-}
-
-.about-right {
-    display: flex;
-    flex-direction:column;
-    height: 100%;
-    width: 50%;
-    float: right;
-    align-items: center;
-    justify-content: center;
+    background: rgb(65,65,65);
+background: linear-gradient(118deg, rgba(65,65,65,1) 0%, rgba(0,0,0,1) 100%);
+    background-size: cover;
 }

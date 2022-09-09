@@ -5,8 +5,8 @@ import { Box } from '@mui/material';
 function Separator() {
 
     return (
-        <div style={{height: '0px', position: 'relative'}}>
-            <img src={SeparatorLogo} style={{position: 'absolute', left: '0px', top: '-150px', width: '100%'}}/>
+        <div style={{position: 'absolute', background: '#212529', height: '15px', width: '100%'}}>
+            
         </div>
         
     )

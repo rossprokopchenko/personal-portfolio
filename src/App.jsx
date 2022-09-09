@@ -8,10 +8,13 @@ import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Footer from './Footer';
 
+import { IconButton } from '@mui/material';
+import { ArrowCircleUp } from '@mui/icons-material';
+
 function App() {
   return (
     <div className="App">
-      <div>
+      <div style={{position: 'relative'}}>
         
         <NavBar />
         <About />
@@ -23,7 +26,13 @@ function App() {
         <Contact />
         <Footer />
 
+        
+        <IconButton sx={{position: 'fixed', bottom: '35px', right: '35px', height: '65px', width: '65px'}} href="#">
+          <ArrowCircleUp color='info'sx={{height: '65px', width: '65px'}}/>
+        </IconButton>
       </div>
+
+      
     </div>
   );
 }
