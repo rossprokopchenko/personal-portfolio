@@ -106,12 +106,12 @@ function Portfolio() {
 
             <ThemeProvider theme={nameTheme}>
                     <Typography variant='h6' sx={{fontStyle: 'italic', mt: '30px'}}>
-                        Please see resume for a specific rundown of my skills
+                        Please see resumé for a specific rundown of my skills
                     </Typography>
                 </ThemeProvider>
             <Box sx={{display: 'flex', mt: '60px'}} justifyContent='center'>
                 
-                <Button id='resume' variant='outlined' color='success' sx={{fontSize: '35px', height: '128px', width: '286px', borderRadius: '20px'}} startIcon={<Assignment sx={{mr: '20px', transform: 'scale(3)'}} />}>RESUMÉ</Button>
+                <Button id='resume' variant='outlined' color='success' sx={{fontSize: '35px', height: '128px', width: '286px', borderRadius: '20px'}} startIcon={<Assignment sx={{mr: '20px', transform: 'scale(3)'}} />} href='Ross_Prokopchenko_Resume_LaTeX.pdf' download>RESUMÉ</Button>
             </Box>
         </Box>
     );
