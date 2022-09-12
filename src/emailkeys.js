@@ -1,0 +1,2 @@
+service: service_zb23yvz
+private: PYxu5Q65B63MXpWcaq6dR
