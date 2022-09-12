@@ -23,17 +23,17 @@ function Portfolio() {
         },});
 
     return (
-        <Box id='portfolio' sx={{background: 'lightgray', p: '80px 60px'}}>
+        <Box id='portfolio' sx={{background: 'lightgray', p: 'min(80px, 3%)'}} justifyContent='center'>
 
             <ThemeProvider theme={nameTheme}>
-                <Typography variant='h2' sx={{fontWeight: 'bolder', mb: '60px'}}>
+                <Typography variant='h2' sx={{fontWeight: 'bolder', mb: '60px', fontSize: '55px'}}>
                     PORTFOLIO
                 </Typography>
             </ThemeProvider>
 
             <Box sx={{display: 'flex', flexDirection: 'row', mb: '60px', flexWrap: 'wrap'}} justifyContent='center'>
 
-            <Paper elevation={5} sx={{p: '10px', minHeight: '290px', maxHeight: '100%', minWidth: '400px', maxWidth: '400px', position: 'relative', m: '7px'}}>
+            <Paper elevation={5} sx={{p: '10px', minWidth: '300px', maxWidth: '400px', position: 'relative', m: '7px'}}>
                 <Box sx={{height: '100%'}}>
                     <ThemeProvider theme={nameTheme}>
                         <Typography variant='h5' sx={{fontWeight: 'bolder'}}>
@@ -50,14 +50,14 @@ function Portfolio() {
                         </Typography>
                     </ThemeProvider>
                     
-                    <Box sx={{position: 'absolute', bottom: '15px', width: '95%'}} justifyContent='center'>
-                    <Button sx={{mr: '7px', width: '170px'}} href="https://www.youtube.com/watch?v=_23mU4sXV8s" target="_blank" variant="outlined" startIcon={<YoutubeLogo height='24px' width='24px' />}>Video Demo</Button>
-                    <Button sx={{ml: '7px', width: '170px'}} href="https://github.com/rossprokopchenko/SmartShoppers" target="_blank" variant="outlined" endIcon={<GithubLogo height='24px' width='24px' />}>GitHub Code</Button>
-                </Box>
+                    <Box sx={{mt: '10px'}} justifyContent='center'>
+                        <Button sx={{m: '7px', width: '155px'}} href="https://www.youtube.com/watch?v=_23mU4sXV8s" target="_blank" variant="outlined" startIcon={<YoutubeLogo height='24px' width='24px' />}>Video Demo</Button>
+                        <Button sx={{m: '7px', width: '155px'}} href="https://github.com/rossprokopchenko/SmartShoppers" target="_blank" variant="outlined" endIcon={<GithubLogo height='24px' width='24px' />}>GitHub Code</Button>
+                    </Box>
                 </Box>
             </Paper>
 
-            <Paper elevation={5} sx={{p: '10px', height: '290px', minWidth: '400px', maxWidth: '400px', position: 'relative', m: '7px'}}>
+            <Paper elevation={5} sx={{p: '10px', minWidth: '300px', maxWidth: '400px', position: 'relative', m: '7px'}}>
                 <ThemeProvider theme={nameTheme}>
                     <Typography variant='h5' sx={{fontWeight: 'bolder'}}>
                         Spotilyzer
@@ -74,14 +74,14 @@ function Portfolio() {
                     </Typography>
                 </ThemeProvider>
                 
-                <Box sx={{position: 'absolute', bottom: '15px', width: '95%'}} justifyContent='center'>
-                    <Button sx={{mr: '7px', width: '170px'}} variant="outlined" startIcon={<YoutubeLogo height='24px' width='24px' />}>Video Demo</Button>
-                    <Button sx={{ml: '7px', width: '170px'}} href="https://github.com/rossprokopchenko/Spotilyzer" target="_blank" variant="outlined" endIcon={<GithubLogo height='24px' width='24px' />}>GitHub Code</Button>
+                <Box sx={{mt: '10px'}} justifyContent='center'>
+                        <Button sx={{m: '7px', width: '155px'}} href="" target="_blank" variant="outlined" startIcon={<YoutubeLogo height='24px' width='24px' />}>Video Demo</Button>
+                        <Button sx={{m: '7px', width: '155px'}} href="https://github.com/rossprokopchenko/Spotilyzer" target="_blank" variant="outlined" endIcon={<GithubLogo height='24px' width='24px' />}>GitHub Code</Button>
                 </Box>
                 
             </Paper>
 
-            <Paper elevation={5} sx={{p: '10px', height: '290px', minWidth: '400px', maxWidth: '400px', position: 'relative', m: '7px'}}>
+            <Paper elevation={5} sx={{p: '10px', minWidth: '300px', maxWidth: '400px', position: 'relative', m: '7px'}}>
                 <ThemeProvider theme={nameTheme}>
                     <Typography variant='h5' sx={{fontWeight: 'bolder'}}>
                         Rosklex Discord Bot
@@ -95,10 +95,9 @@ function Portfolio() {
                     </Typography>
                 </ThemeProvider>
                 
-                <Box sx={{position: 'absolute', bottom: '15px', width: '95%'}} justifyContent='center'>
-                    <Button sx={{width: '170px'}} href="https://github.com/rossprokopchenko/RosklexBot" target="_blank" variant="outlined" endIcon={<GithubLogo height='24px' width='24px' />}>GitHub Code</Button>
+                <Box sx={{mt: '10px'}} justifyContent='center'>
+                        <Button sx={{m: '7px', width: '155px'}} href="https://github.com/rossprokopchenko/RosklexBot" target="_blank" variant="outlined" endIcon={<GithubLogo height='24px' width='24px' />}>GitHub Code</Button>
                 </Box>
-                
             </Paper>
             </Box>
 

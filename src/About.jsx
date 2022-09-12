@@ -26,10 +26,10 @@ function About() {
                 <Box className="about-left" style={{display: 'flex', flexDirection: 'column', width: '50%', flexBasis: '500px', flexGrow: '1'}} p={4} justifyContent='center' alignContent='center'>
                     <Avatar
                         src={avatar}
-                        sx={{ boxShadow: '5px 5px 8px #000000', width: 400, height: 400, ml: 'auto', mr: 'auto'}}
+                        sx={{ boxShadow: '5px 5px 8px #000000', width: 300, height: 300, ml: 'auto', mr: 'auto'}}
                     />
                     <ThemeProvider theme={nameTheme}>
-                        <Typography variant='h3' style={{marginTop: '25px', color: 'lightgray', fontWeight: 'bolder'}}>Ross Prokopchenko</Typography>
+                        <Typography variant='h3' style={{marginTop: '25px', color: 'lightgray', fontWeight: 'bolder', fontSize: '40px'}}>Ross Prokopchenko</Typography>
                     </ThemeProvider>
                     
                     <Typography variant='h4' style={{color: 'lightgray', fontStyle: 'italic'}}>SOFTWARE DEVELOPER</Typography>

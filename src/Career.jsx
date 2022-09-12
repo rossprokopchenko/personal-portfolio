@@ -28,7 +28,7 @@ function Career() {
                 </Typography>
             </ThemeProvider>
             
-            <Timeline position='alternate' sx={{ p: '80px 50px'}}>
+            <Timeline position='alternate' sx={{ p: 'min(60px, 3%)'}}>
                 <TimelineItem>
                     <TimelineOppositeContent
                     sx={{ m: 'auto 0' }}

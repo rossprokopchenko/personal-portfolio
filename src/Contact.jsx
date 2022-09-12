@@ -37,7 +37,7 @@ function Contact() {
         
         if(errorTimer == 0 && !warning) {
             startTimer(45);
-            
+
             emailjs.send('service_xmxvu9m', 'template_e38gu1j', contact, '3TijilKWK583dTRbQ')
             .then(function(response) {
                 console.log('CONTACT EMAIL SUCCESS!', response.status, response.text);
@@ -98,7 +98,7 @@ function Contact() {
                 </Typography>
             </ThemeProvider>
             
-            <Paper elevation={5} sx={{p: '15px', background: 'white', height: '420px', width: '512px'}}>
+            <Paper elevation={5} sx={{p: '15px', background: 'white', height: '420px', minWidth: '300px', maxWidth: '512px'}}>
                 <Box sx={{height: '100%', position: 'relative'}}>
                     <Box sx={{display: 'flex', flexDirection: 'row'}}>
                         <TextField
