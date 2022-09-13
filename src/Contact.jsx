@@ -38,12 +38,14 @@ function Contact() {
         if(errorTimer == 0 && !warning) {
             startTimer(45);
 
+            /*
             emailjs.send('service_xmxvu9m', 'template_e38gu1j', contact, '3TijilKWK583dTRbQ')
             .then(function(response) {
                 console.log('CONTACT EMAIL SUCCESS!', response.status, response.text);
             }, function(error) {
                 console.log('CONTACT EMAIL FAILED...', error);
             });
+            */
         } else {
             setWarning(true);
         }
@@ -90,7 +92,7 @@ function Contact() {
     }
 
     return (
-        <Box id="contact" sx={{background: 'lightgray', p: '80px', flexDirection: 'column'}} display='flex' justifyContent='center' alignItems='center'>
+        <Box id="contact" sx={{background: 'lightgray', p: '50px', flexDirection: 'column'}} display='flex' justifyContent='center' alignItems='center'>
 
             <ThemeProvider theme={theme}>
                 <Typography variant='h2' sx={{fontWeight: 'bolder', mb: '50px'}}>
@@ -133,14 +135,14 @@ function Contact() {
                         />
                     </Box>
 
-                    <Collapse in={open} sx={{mt: '5px'}}>
+                    <Collapse in={open} sx={{mt: '5px', mb: '20px' }}>
                         {!warning ? 
                         
                         <Alert onClose={() => {setOpen(false)}}>Your message has been successfully sent to my email!</Alert>
                         : <Alert severity='error' onClose={() => {setOpen(false)}}>Please wait {errorTimer > 0 ? errorTimer + " seconds" : ''} before sending another email</Alert>}
                     </Collapse>
                 
-                    <Box sx={{position: 'absolute', bottom: '0', width: '100%'}} display='flex' justifyContent='center'>
+                    <Box sx={{position: 'absolute', bottom: '0',width: '100%'}} display='flex' justifyContent='center'>
                         <Button variant='contained' color='success' sx={{width: '110px'}} endIcon={<Send />} onClick={handleSubmit}>Send</Button>
                     </Box>
                 </Box>

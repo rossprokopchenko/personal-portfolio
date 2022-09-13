@@ -23,7 +23,7 @@ function Portfolio() {
         },});
 
     return (
-        <Box id='portfolio' sx={{background: 'lightgray', p: 'min(80px, 3%)'}} justifyContent='center'>
+        <Box id='portfolio' sx={{background: 'lightgray', p: 'min(80px, 3%)', pt: '50px'}} justifyContent='center'>
 
             <ThemeProvider theme={nameTheme}>
                 <Typography variant='h2' sx={{fontWeight: 'bolder', mb: '60px', fontSize: '55px'}}>
@@ -75,7 +75,7 @@ function Portfolio() {
                 </ThemeProvider>
                 
                 <Box sx={{mt: '10px'}} justifyContent='center'>
-                        <Button sx={{m: '7px', width: '155px'}} href="" target="_blank" variant="outlined" startIcon={<YoutubeLogo height='24px' width='24px' />}>Video Demo</Button>
+                        <Button sx={{m: '7px', width: '155px'}} href="https://youtu.be/Ctl-6Y6hpVk" target="_blank" variant="outlined" startIcon={<YoutubeLogo height='24px' width='24px' />}>Video Demo</Button>
                         <Button sx={{m: '7px', width: '155px'}} href="https://github.com/rossprokopchenko/Spotilyzer" target="_blank" variant="outlined" endIcon={<GithubLogo height='24px' width='24px' />}>GitHub Code</Button>
                 </Box>
                 

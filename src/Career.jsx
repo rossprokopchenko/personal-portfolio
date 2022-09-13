@@ -23,7 +23,7 @@ function Career() {
     return (
         <Box id="career" style={{color: 'lightgray', background: 'black'}} alignItems='center'>
             <ThemeProvider theme={nameTheme}>
-                <Typography variant="h2" sx={{pt: '100px', fontWeight: 'bolder'}}>
+                <Typography variant="h2" sx={{pt: '50px', fontWeight: 'bolder'}}>
                     CAREER
                 </Typography>
             </ThemeProvider>
